@@ -286,7 +286,7 @@ const MLEngineerDashboard = () => {
                 <div className="space-y-4">
                     {roadmap.map((section) => {
                         const Icon = section.icon;
-                        const isExpanded = expandedSections[parseInt(section.id)];
+                        const isExpanded = expandedSections[section.id];
                         const progress = getSectionProgress(section.id, section.items.length);
 
                         return (
